@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 14px;
 }
 
 html, body {
@@ -11,6 +10,8 @@ html, body {
   background: #eeeeee;
   color: #2e3131;
   overflow-y: overlay;
+  height: 100%;
+  font-size: 14px;
 }
 
 #title {
@@ -19,16 +20,22 @@ html, body {
   font-weight: bold;
   margin: 10px;
 }
+#mainwrap {
+  flex-grow: 1;
+}
 .content {
+  align-self: flex-start;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px;
+  padding-bottom: 0;
 }
 .content .block {
   box-sizing: border-box;
-  width: calc(100% - 20px);
+  width: calc(100%);
   height: calc(100vw - 20px);
-  margin: 10px;
+  margin-bottom: 10px;
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
@@ -39,9 +46,62 @@ html, body {
   height: 100%
 }
 
-@media (min-width: 300px) {
+@media (min-width: 480px) {
+  #title {
+    font-size: 3em;
+  }
   .content .block {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
     height: calc(50vw - 20px);
   }
+}
+
+@media (min-width: 660px) {
+  #title {
+    font-size: 5em;
+  }
+
+  .content {
+    margin: auto;
+    width: 660px;
+  }
+
+  .content .block {
+    width: 320px;
+    height: 320px;;
+  }
+}
+
+@media (min-width : 1200px) {
+  #title {
+    font-size: 3em;
+  }
+  .content {
+    margin: auto;
+    width: 820px;
+  }
+
+  .content .block {
+    width: 400px;
+    height: 400px;;
+  }
+}
+
+@media (min-width : 1624px) {
+  #title {
+    font-size: 6em;
+  }
+  .content {
+    margin: auto;
+    width: 1240px;
+  }
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
