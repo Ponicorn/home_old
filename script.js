@@ -17,6 +17,9 @@ const projects = {
   chevaul: {
     url: 'http://chevaul.sauder.fr'
   },
+  ctrl: {
+    url: 'https://ponicorn.github.io/ctrl/'
+  },
 }
 
 let main = document.querySelector('#main')
