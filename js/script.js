@@ -1,5 +1,9 @@
 let projects = [
   { 
+    name: 'irregex',
+    url: 'https://ponicorn.github.io/Irregex/',
+  },
+  { 
     name: 'gralette',
     url: 'https://ponicorn.github.io/gralette/',
   },
@@ -8,20 +12,16 @@ let projects = [
     url: 'https://ponicorn.github.io/startupify/',
   },
   { 
-    name: 'perche',
-    url: 'https://ponicorn.github.io/TUP/',
-  },
-  { 
     name: 'synth',
     url: 'https://ponicorn.github.io/synth/',
   },
   { 
-    name: 'pxfr',
-    url: 'https://ponicorn.github.io/PixelFightingReload/',
-  },
-  { 
     name: 'ctrl',
     url: 'https://ponicorn.github.io/ctrl/',
+  },
+  { 
+    name: 'pxfr',
+    url: 'https://ponicorn.github.io/PixelFightingReload/',
   },
   { 
     name: 'aocaop',
